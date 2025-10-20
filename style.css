@@ -1,160 +1,159 @@
-@import "tailwindcss";
-import googlefonts from 'google-fonts';
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-/>
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/icon?family=Material+Icons"
-/>
-.flex-parent {
-    border: 2px solid green;
-    height: 400px;
-    display: flex;
-    align-items: center;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.hamburger.is-active div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.is-active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-active div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Main Content */
+main {
+  padding: 1rem;
+}
+
+.hero {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+  justify-items: center;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Form */
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
     flex-direction: column;
-    }
-    h1{
-        color:black;
-      font-size 52px;
-      }
-      * Universal Styles */
-      body {
-      font-family: system-ui;
-      font-family: Arial, Helvetica, sans-serif;
-      background: black;
-      color: white;
-      text-align: center;
-      element.style }
-      border.> 50px solid:
-      padding:> 100px.
-      margin:> 50px 0.
-      .box-one {
-      display: inline;
-      background: #1301ff;
-      .box-two {
-      background: #fe3625;
-      display: inline;
-      h1 {
-      color: 0red
-      }
-      (media ()
-      (media (min.width:668px) {
-         h1 {
-          color: blue;
-          }
-          }
-         @media (orientation: portrait) { 
-         @media (orientation: landscape) { 
-         @media (resolution: 300dpi) { 
-         @media (min-r/esolution: 300dpi) { 
-         @media (max-resolution: 300dpi) { 
-         @media (pointer: none)
-         @media (hover: hover)
-         @media only screen and (max-width: 500px)
-         @media (min-width: 501px) and (max-width: 768px)
-             /* SmartPhones */
-         @media (max-height: 500px)
-           /* Tablet */
-         @media (min-width: 501px) and (max-width: 768px)
-         @media (max-width: 600px) {
-         @media (min-width: 601px) { 
-         @media (min-width: 600px) and (max-width: 900px) {  
-         @media (max-height: 600px) { 
-         @media (min-height: 601px) { 
-         @media (min-height: 600px) and (max-height: 900px) { 
-         @media (resolution: 300dpi) { 
-         @media (min-resolution: 300dpi) { 
-         @media (max-resolution: 300dpi) { 
-         @media (pointer: none)
-         @media (hover: hover)
-         @media only screen and (max-width: 500px)
-         @media (min-width: 501px) and (max-width: 768px)
-           /* normal /*
-         @media (min-width: 769px) and (max-width: 1200px)
-           /* widescreen /*
-         @media (min-width: 1201px)
-          </head>
-          <body>
-          <img src-"./images/SGG.png alt-"logo">
-           <link rel="stylesheet" media="print" href="print.css">
-      <link rel="stylesheet" media="screen" href="screen.css">
-      <link rel="stylesheet" media="screen and (min-width: 480px)" href="example1.css">
-      <link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 900px)" href="example2.css">
-           @media not|only mediatype and (media feature) and (media feature) {
-        CSS-Code;
-           <body>
-         {
-            .flex-parent {
-           border: 2px solid blue;
-           height: 400px;
-           display: flex;
-           align-items: center;
-           justify-content:space-between;
-           flex-direction: row;
-           gap: 4px;
-           flex-wrap: wrap;
-           }
-           
-           .flex-child {
-           width: 100px;
-           height: 40px;
-           }
-           
-            .flex-parent {
-           border: 2px solid blue;
-           height: 400px;
-           display: flex;
-           align-items: center;
-           flex-direction: column;
-           }
-           
-           .flex-child {
-           width: 100 px;
-           height: 40 px;
-         {
-           .red {
-           background: red;
-         {
-            .blue {
-           background: blue;
-         {
-             .pink {
-           background: pink;
-         {
-            .orange {
-           background: orange;
-         {
-           h1 {
-          color:green
-          font-size: 52px;
-      }
-      
-      .top-heading{
-          color: red;
-          font-size: 12 px;
-      }
-      
-      .second-heading{
-          color:purple;
-            .grey-box{
-                  background-color: grey;
-              padding: 20px;
-              width 400px;
-          }
-           .grey-box img{
-              width: 100%;
-          }
-          }
-      }
-           </sektion>   
-        }    
-          </body>
-          </html>
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    background-color: #333;
+    width: 100%;
+    padding: 1rem;
+    transition: left 0.3s;
+  }
+
+  .nav-links.active {
+    display: flex;
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
