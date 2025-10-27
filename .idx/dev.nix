@@ -16,6 +16,7 @@
     # pkgs.busybox
     # pkgs.autorestic
     # pkgs.gnumake
+    # pkgs.openssh
   ];
 
   # Sets environment variables in the workspace
