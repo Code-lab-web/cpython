@@ -15,6 +15,7 @@
     # pkgs.python312Packages.pip
     # pkgs.busybox
     # pkgs.autorestic
+    # pkgs.gnumake
   ];
 
   # Sets environment variables in the workspace
