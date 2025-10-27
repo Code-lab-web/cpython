@@ -15,8 +15,8 @@
     # pkgs.python312Packages.pip
     # pkgs.busybox
     # pkgs.autorestic
-    pkgs.gnumake,
-    pkgs.gcc
+    # pkgs.gnumake,
+    # pkgs.gcc
     # pkgs.openssh
   ];
 
