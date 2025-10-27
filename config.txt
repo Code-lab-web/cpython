@@ -1,0 +1,5 @@
+You can pass --with-pydebug to the configure script to get a debug build of Python. This adds the following features:
+
+- The `-d` command line flag to Python, which turns on parser debugging output (useful for debugging the grammar).
+
+- The `--with-trace-refs` configure option, which builds a special version of Python that tracks all object references and can print a list of all live objects when Python exits (useful for debugging memory leaks).
